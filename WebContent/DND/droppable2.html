@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Droppable</title>
+        <link rel="stylesheet" href="css/droppableActive.css">
+	</head>
+	<body>
+		<div class="drag" id="drag1"></div>
+		<div class="drag" id="drag2"></div>
+        <div id="target"></div>
+        <script src="development-bundle/jquery-1.4.4.js"></script>
+        <script src="development-bundle/ui/jquery.ui.core.js"></script>
+        <script src="development-bundle/ui/jquery.ui.widget.js"></script>
+        <script src="development-bundle/ui/jquery.ui.mouse.js"></script>
+        <script src="development-bundle/ui/jquery.ui.draggable.js"></script>
+        <script src="development-bundle/ui/jquery.ui.droppable.js"></script>
+        <script>
+			(function($){
+				$(".drag").draggable();
+
+				var dropOpts = {
+					accept: "#drag1",
+					activeClass: "activated"
+				};
+
+				$("#target").droppable(dropOpts);
+			})(jQuery);
+		</script>
+	</body>
+</html>

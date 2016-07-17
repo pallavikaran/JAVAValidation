@@ -1,0 +1,29 @@
+<html>
+<head>
+<title>DOM Level 2 Events Example</title>
+<script type="text/javascript"
+src="../jquery/jquery.js">
+</script>
+<script type="text/javascript">
+$(function(){
+$('#vstar')
+.bind('click',function(event) {
+say('Click once!');
+})
+.bind('click',function(event) {
+say('Click twice!');
+})
+.bind('click',function(event) {
+say('Click three times!');
+});
+});
+function say(text) {
+$('#console').append('<div>'+text+'</div>');
+}
+</script>
+</head>
+<body>
+<img id="vstar" src="book.png"/>
+<div id="console"></div>
+</body>
+</html>

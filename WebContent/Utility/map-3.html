@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  	<title>$.map()</title>
+    <link rel="stylesheet" href="misc.css" type="text/css" media="screen" />
+  	<script src="jquery.js" type="text/javascript"></script>
+  	<script src="misc.js" type="text/javascript"></script>
+  	<script type="text/javascript">
+  	  $(document).ready(function() {
+        var array = [0, 1, 52, 97];
+        $.print(array);
+        array = $.map(array, function(a, i) {
+          return [a - 45, i];
+        });
+        $.print(array);
+  	  });
+  	</script>
+  </head>
+  <body>
+  </body>
+</html>
+
+
+

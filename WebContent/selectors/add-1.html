@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  	<title>.add()</title>
+      	<script src="jquery.js" type="text/javascript"></script>
+  	<script type="text/javascript">
+      // $(document).ready(function() {
+      //   $('li').add('p').css('background-color', 'red');
+      // });
+
+  	  $(document).ready(function() {
+  	    $('li:odd').add(document.getElementsByTagName('p')[0])
+  	      .css('background-color', 'silver');
+		$('li:even').css('background','pink');
+		$('li:first,li:last').css('color','red');
+		//$('li:last').css('color','red');
+
+  	  });
+  	</script>
+  </head>
+  <body>
+
+    <ul>
+      <li>list item 1</li>
+      <li>list item 2</li>
+      <li>list item 3</li>
+	  <li>list item 1</li>
+      <li>list item 2</li>
+      <li>list item 3</li>
+	  <li>list item 1</li>
+      <li>list item 2</li>
+      <li>list item 3</li>
+    </ul>
+    <p>a paragraph</p>
+    <p>a paragraph</p>
+    
+  </body>
+</html>
+
+
+

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  	<title>$.ajax()</title>
+    <link rel="stylesheet" href="ajax.css" type="text/css" media="screen" />
+  	<script src="jquery.js" type="text/javascript"></script>
+  	<script src="ajax.js" type="text/javascript"></script>
+  	<script type="text/javascript">
+  	  $(document).ready(function() {
+        $.ajax({
+          // context: $('.result')[0],
+          url: 'ajax/test.html',
+          success: function(data) {
+            // $(this).html(data);
+            $('.result').html(data);
+            $.print('Load was performed.');
+          },
+        error:function(){
+        	alert('Some Error');
+         }
+        
+        });
+  	  });
+  	</script>
+  </head>
+  <body>
+    <div class="result"></div>
+  </body>
+</html>
+
+
+

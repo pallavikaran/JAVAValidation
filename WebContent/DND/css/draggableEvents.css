@@ -1,0 +1,2 @@
+#drag { width:114px; height:114px; cursor:move; background:url(../img/draggable.png) no-repeat; }
+#drag.up { width:120px; height:121px; background:url(../img/draggable_on.png) no-repeat; }

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  	<title>.map()</title>
+    <link rel="stylesheet" href="traversal.css" type="text/css" media="screen" />
+  	<script src="jquery.js" type="text/javascript"></script>
+  	<script type="text/javascript">
+  	  $(document).ready(function() {        
+        $('.container').contents().filter(function() {
+          return this.nodeType == 3;
+        })
+          .wrap('<p></p>')
+        .end()
+        .filter('br')
+          .remove();
+ 
+  	  });
+  	</script>
+  </head>
+  <body>
+    <div class="container">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br /><br />
+      Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<br /><br />
+      Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+     </div>
+   
+  </body>
+</html>
+
+
+

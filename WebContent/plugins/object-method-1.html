@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  	<title>Object Method Plugin</title>
+    <link rel="stylesheet" href="plugins.css" type="text/css" media="screen" />
+  	<script src="jquery.js" type="text/javascript"></script>
+  	
+  	<script type="text/javascript">
+  	  jQuery.fn.showAlert = function() {
+        return this.each(function() {
+          alert('You called the method on "' + this + '".');
+        });
+      };
+  	
+  	  $(document).ready(function() {
+        $('.myClass').showAlert();
+  	  });
+  	</script>
+  </head>
+  <body>
+    <div class="myClass">
+    </div>
+  </body>
+</html>
+
+
+

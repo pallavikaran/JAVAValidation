@@ -1,0 +1,33 @@
+<html id="greatgreatgrandpa">
+<head>
+<title>DOM Level 0 Events Example</title>
+<script type="text/javascript"
+src="../jquery/jquery.js">
+</script>
+<script type="text/javascript">
+$(function(){
+$('*').each(function(){
+var current = this;
+this. onclick = function(event) {
+if (!event) event = window.event;
+var target = (event.target) ?
+event.target : event.srcElement;
+say('For ' + current.tagName + '#'+ current.id +
+' target is ' + target.id);
+}
+});
+});
+function say(text) {
+$('#console').append('<div>'+text+'</div>');
+}
+</script>
+</head>
+<body id="greatgrandpa">
+<div id="grandpa">
+<div id="pops">
+<img id="vstar" src="book.png"/>
+</div>
+</div>
+<div id="console"></div>
+</body>
+</html>

@@ -1,0 +1,41 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+body {
+  font: 13px/1.4em Helvetica, Arial, Verdana, sans-serif;
+}
+
+
+div {
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #888;
+  width: 100px;
+}
+
+img {
+  margin: 0 10px;
+  padding: 10px;
+  border: 1px solid #888;
+}
+
+#print-output {
+  background-color: #000;
+  color: #8f8;
+}
+#print-output div {
+  font-size: 0.8em;
+  margin: 0 0 10px 0;
+  padding: 0;
+  border: none;
+}
+.hoverme {
+  height: 146px;
+}
+.hoverme-book {
+  margin: 0;
+  padding: 0;
+  border-width: 0;
+}

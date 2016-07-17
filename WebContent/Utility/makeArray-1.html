@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  	<title>$.makeArray()</title>
+    <link rel="stylesheet" href="misc.css" type="text/css" media="screen" />
+  	<script src="jquery.js" type="text/javascript"></script>
+  	<script src="misc.js" type="text/javascript"></script>
+  	<script type="text/javascript">
+  	  $(document).ready(function() {
+        var obj = $('li');
+        $.print(obj);
+
+        obj = $.makeArray(obj);
+        $.print(obj);
+  	  });
+  	</script>
+  </head>
+  <body>
+    <ul>
+      <li>foo</li>
+      <li>bar</li>
+    </ul>
+  </body>
+</html>
+
+
+

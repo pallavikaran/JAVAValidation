@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  	<title>$.extend()</title>
+    <link rel="stylesheet" href="misc.css" type="text/css" media="screen" />
+  	<script src="jquery.js" type="text/javascript"></script>
+  	<script src="misc.js" type="text/javascript"></script>
+  	<script type="text/javascript">
+  	  $(document).ready(function() {
+        var object1 = {
+          apple: 0,
+          banana: {weight: 52, price: 100},
+          cherry: 97
+        };
+        var object2 = {
+          banana: {price: 200},
+          durian: 100
+        };
+
+        $.print(object1);
+        $.print(object2);
+        var object = $.extend(object1, object2);
+        $.print(object);
+  	  });
+  	</script>
+  </head>
+  <body>
+  </body>
+</html>
+
+
+

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<title>The jQuery Example</title>
+<style>
+.style1{
+color:red;
+background:green;
+}
+.style2
+{
+color:wheat;
+background:black;
+}
+</style>
+   <script type="text/javascript" 
+   src="../jquery/jquery.js"></script>
+   
+   <script type="text/javascript" language="javascript">
+  
+   $(document).ready(function() {
+	   $("#b").click(function()
+		{
+		$("#div1").toggleClass("style1");   
+		}	   
+	    )
+	   
+	   
+      $("#div").click(function() {
+        alert("Hello world!");
+      });
+      $(".style1").click(function() {
+          alert("style1 clicked");
+        });
+      $("div p").css("color","wheat").css("background","black");
+      $("div p").removeClass("style2");
+   });
+   
+   </script>
+
+</head>
+<body>
+<div id="div">
+<p>
+Click on this to see a dialogue box.
+</p>
+</div>
+<div id="div1" class="style1">
+Click on this to see a dialogue box.
+</div>
+<input type="button" id="b" name="applyStyle"/> 
+
+
+
+</body>
+</html>
